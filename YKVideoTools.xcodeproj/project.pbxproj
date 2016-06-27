@@ -14,6 +14,8 @@
 		E43BFC361D20FBD60074B9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43BFC341D20FBD60074B9FE /* LaunchScreen.storyboard */; };
 		E43BFC411D20FBD60074B9FE /* YKVideoToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC401D20FBD60074B9FE /* YKVideoToolsTests.swift */; };
 		E43BFC4C1D20FBD60074B9FE /* YKVideoToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC4B1D20FBD60074B9FE /* YKVideoToolsUITests.swift */; };
+		E43BFC5A1D20FC620074B9FE /* CGRect+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC591D20FC620074B9FE /* CGRect+EX.swift */; };
+		E43BFC5C1D21069D0074B9FE /* YKVideoTrimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC5B1D21069D0074B9FE /* YKVideoTrimmer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E43BFC471D20FBD60074B9FE /* YKVideoToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKVideoToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43BFC4B1D20FBD60074B9FE /* YKVideoToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKVideoToolsUITests.swift; sourceTree = "<group>"; };
 		E43BFC4D1D20FBD60074B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43BFC591D20FC620074B9FE /* CGRect+EX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+EX.swift"; sourceTree = "<group>"; };
+		E43BFC5B1D21069D0074B9FE /* YKVideoTrimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKVideoTrimmer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				E43BFC2B1D20FBD60074B9FE /* AppDelegate.swift */,
 				E43BFC2D1D20FBD60074B9FE /* ViewController.swift */,
+				E43BFC5B1D21069D0074B9FE /* YKVideoTrimmer.swift */,
+				E43BFC591D20FC620074B9FE /* CGRect+EX.swift */,
 				E43BFC2F1D20FBD60074B9FE /* Main.storyboard */,
 				E43BFC321D20FBD60074B9FE /* Assets.xcassets */,
 				E43BFC341D20FBD60074B9FE /* LaunchScreen.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				E43BFC2E1D20FBD60074B9FE /* ViewController.swift in Sources */,
 				E43BFC2C1D20FBD60074B9FE /* AppDelegate.swift in Sources */,
+				E43BFC5C1D21069D0074B9FE /* YKVideoTrimmer.swift in Sources */,
+				E43BFC5A1D20FC620074B9FE /* CGRect+EX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
