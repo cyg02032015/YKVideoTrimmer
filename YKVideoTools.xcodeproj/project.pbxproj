@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E43BFC2C1D20FBD60074B9FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC2B1D20FBD60074B9FE /* AppDelegate.swift */; };
+		E43BFC2E1D20FBD60074B9FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC2D1D20FBD60074B9FE /* ViewController.swift */; };
+		E43BFC311D20FBD60074B9FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43BFC2F1D20FBD60074B9FE /* Main.storyboard */; };
+		E43BFC331D20FBD60074B9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43BFC321D20FBD60074B9FE /* Assets.xcassets */; };
+		E43BFC361D20FBD60074B9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43BFC341D20FBD60074B9FE /* LaunchScreen.storyboard */; };
+		E43BFC411D20FBD60074B9FE /* YKVideoToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC401D20FBD60074B9FE /* YKVideoToolsTests.swift */; };
+		E43BFC4C1D20FBD60074B9FE /* YKVideoToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43BFC4B1D20FBD60074B9FE /* YKVideoToolsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E43BFC3D1D20FBD60074B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43BFC201D20FBD60074B9FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43BFC271D20FBD60074B9FE;
+			remoteInfo = YKVideoTools;
+		};
+		E43BFC481D20FBD60074B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E43BFC201D20FBD60074B9FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E43BFC271D20FBD60074B9FE;
+			remoteInfo = YKVideoTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E43BFC281D20FBD60074B9FE /* YKVideoTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKVideoTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BFC2B1D20FBD60074B9FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E43BFC2D1D20FBD60074B9FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E43BFC301D20FBD60074B9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43BFC321D20FBD60074B9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43BFC351D20FBD60074B9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E43BFC371D20FBD60074B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43BFC3C1D20FBD60074B9FE /* YKVideoToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKVideoToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BFC401D20FBD60074B9FE /* YKVideoToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKVideoToolsTests.swift; sourceTree = "<group>"; };
+		E43BFC421D20FBD60074B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43BFC471D20FBD60074B9FE /* YKVideoToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKVideoToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43BFC4B1D20FBD60074B9FE /* YKVideoToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKVideoToolsUITests.swift; sourceTree = "<group>"; };
+		E43BFC4D1D20FBD60074B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E43BFC251D20FBD60074B9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC391D20FBD60074B9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC441D20FBD60074B9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E43BFC1F1D20FBD60074B9FE = {
+			isa = PBXGroup;
+			children = (
+				E43BFC2A1D20FBD60074B9FE /* YKVideoTools */,
+				E43BFC3F1D20FBD60074B9FE /* YKVideoToolsTests */,
+				E43BFC4A1D20FBD60074B9FE /* YKVideoToolsUITests */,
+				E43BFC291D20FBD60074B9FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E43BFC291D20FBD60074B9FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E43BFC281D20FBD60074B9FE /* YKVideoTools.app */,
+				E43BFC3C1D20FBD60074B9FE /* YKVideoToolsTests.xctest */,
+				E43BFC471D20FBD60074B9FE /* YKVideoToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E43BFC2A1D20FBD60074B9FE /* YKVideoTools */ = {
+			isa = PBXGroup;
+			children = (
+				E43BFC2B1D20FBD60074B9FE /* AppDelegate.swift */,
+				E43BFC2D1D20FBD60074B9FE /* ViewController.swift */,
+				E43BFC2F1D20FBD60074B9FE /* Main.storyboard */,
+				E43BFC321D20FBD60074B9FE /* Assets.xcassets */,
+				E43BFC341D20FBD60074B9FE /* LaunchScreen.storyboard */,
+				E43BFC371D20FBD60074B9FE /* Info.plist */,
+			);
+			path = YKVideoTools;
+			sourceTree = "<group>";
+		};
+		E43BFC3F1D20FBD60074B9FE /* YKVideoToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E43BFC401D20FBD60074B9FE /* YKVideoToolsTests.swift */,
+				E43BFC421D20FBD60074B9FE /* Info.plist */,
+			);
+			path = YKVideoToolsTests;
+			sourceTree = "<group>";
+		};
+		E43BFC4A1D20FBD60074B9FE /* YKVideoToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E43BFC4B1D20FBD60074B9FE /* YKVideoToolsUITests.swift */,
+				E43BFC4D1D20FBD60074B9FE /* Info.plist */,
+			);
+			path = YKVideoToolsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E43BFC271D20FBD60074B9FE /* YKVideoTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BFC501D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoTools" */;
+			buildPhases = (
+				E43BFC241D20FBD60074B9FE /* Sources */,
+				E43BFC251D20FBD60074B9FE /* Frameworks */,
+				E43BFC261D20FBD60074B9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YKVideoTools;
+			productName = YKVideoTools;
+			productReference = E43BFC281D20FBD60074B9FE /* YKVideoTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E43BFC3B1D20FBD60074B9FE /* YKVideoToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BFC531D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoToolsTests" */;
+			buildPhases = (
+				E43BFC381D20FBD60074B9FE /* Sources */,
+				E43BFC391D20FBD60074B9FE /* Frameworks */,
+				E43BFC3A1D20FBD60074B9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43BFC3E1D20FBD60074B9FE /* PBXTargetDependency */,
+			);
+			name = YKVideoToolsTests;
+			productName = YKVideoToolsTests;
+			productReference = E43BFC3C1D20FBD60074B9FE /* YKVideoToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E43BFC461D20FBD60074B9FE /* YKVideoToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43BFC561D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoToolsUITests" */;
+			buildPhases = (
+				E43BFC431D20FBD60074B9FE /* Sources */,
+				E43BFC441D20FBD60074B9FE /* Frameworks */,
+				E43BFC451D20FBD60074B9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E43BFC491D20FBD60074B9FE /* PBXTargetDependency */,
+			);
+			name = YKVideoToolsUITests;
+			productName = YKVideoToolsUITests;
+			productReference = E43BFC471D20FBD60074B9FE /* YKVideoToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E43BFC201D20FBD60074B9FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = youngkook;
+				TargetAttributes = {
+					E43BFC271D20FBD60074B9FE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E43BFC3B1D20FBD60074B9FE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E43BFC271D20FBD60074B9FE;
+					};
+					E43BFC461D20FBD60074B9FE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E43BFC271D20FBD60074B9FE;
+					};
+				};
+			};
+			buildConfigurationList = E43BFC231D20FBD60074B9FE /* Build configuration list for PBXProject "YKVideoTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E43BFC1F1D20FBD60074B9FE;
+			productRefGroup = E43BFC291D20FBD60074B9FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E43BFC271D20FBD60074B9FE /* YKVideoTools */,
+				E43BFC3B1D20FBD60074B9FE /* YKVideoToolsTests */,
+				E43BFC461D20FBD60074B9FE /* YKVideoToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E43BFC261D20FBD60074B9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BFC361D20FBD60074B9FE /* LaunchScreen.storyboard in Resources */,
+				E43BFC331D20FBD60074B9FE /* Assets.xcassets in Resources */,
+				E43BFC311D20FBD60074B9FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC3A1D20FBD60074B9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC451D20FBD60074B9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E43BFC241D20FBD60074B9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BFC2E1D20FBD60074B9FE /* ViewController.swift in Sources */,
+				E43BFC2C1D20FBD60074B9FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC381D20FBD60074B9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BFC411D20FBD60074B9FE /* YKVideoToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43BFC431D20FBD60074B9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43BFC4C1D20FBD60074B9FE /* YKVideoToolsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E43BFC3E1D20FBD60074B9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43BFC271D20FBD60074B9FE /* YKVideoTools */;
+			targetProxy = E43BFC3D1D20FBD60074B9FE /* PBXContainerItemProxy */;
+		};
+		E43BFC491D20FBD60074B9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E43BFC271D20FBD60074B9FE /* YKVideoTools */;
+			targetProxy = E43BFC481D20FBD60074B9FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E43BFC2F1D20FBD60074B9FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43BFC301D20FBD60074B9FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E43BFC341D20FBD60074B9FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43BFC351D20FBD60074B9FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E43BFC4E1D20FBD60074B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E43BFC4F1D20FBD60074B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E43BFC511D20FBD60074B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YKVideoTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E43BFC521D20FBD60074B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YKVideoTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E43BFC541D20FBD60074B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YKVideoToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YKVideoTools.app/YKVideoTools";
+			};
+			name = Debug;
+		};
+		E43BFC551D20FBD60074B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YKVideoToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YKVideoTools.app/YKVideoTools";
+			};
+			name = Release;
+		};
+		E43BFC571D20FBD60074B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YKVideoToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YKVideoTools;
+			};
+			name = Debug;
+		};
+		E43BFC581D20FBD60074B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YKVideoToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngkook.YKVideoToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YKVideoTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E43BFC231D20FBD60074B9FE /* Build configuration list for PBXProject "YKVideoTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BFC4E1D20FBD60074B9FE /* Debug */,
+				E43BFC4F1D20FBD60074B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43BFC501D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BFC511D20FBD60074B9FE /* Debug */,
+				E43BFC521D20FBD60074B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E43BFC531D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BFC541D20FBD60074B9FE /* Debug */,
+				E43BFC551D20FBD60074B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E43BFC561D20FBD60074B9FE /* Build configuration list for PBXNativeTarget "YKVideoToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E43BFC571D20FBD60074B9FE /* Debug */,
+				E43BFC581D20FBD60074B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E43BFC201D20FBD60074B9FE /* Project object */;
+}
