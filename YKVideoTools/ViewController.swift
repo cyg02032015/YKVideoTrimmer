@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var asset: AVAsset!
     var startTime: CGFloat!
     var stopTime: CGFloat!
+    var trimmerView: YKVideoTrimmer!
     
     var isPlaying: Bool = false
     override func viewDidLoad() {
@@ -44,6 +45,9 @@ class ViewController: UIViewController {
         videoPlayer.addSubview(videoLayer)
         
         tempVideoPath = NSTemporaryDirectory().stringByAppendingString("tempMov.mov")
+        
+        trimmerView = YKVideoTrimmer(frame: CGRect(x: 0, y: UIScreen.mainScreen().bounds.height - 200, width: UIScreen.mainScreen().bounds.width, height: 100))
+        view.addSubview(trimmerView)
     }
 
     func tapSelectVideo(sender: UIButton) {
@@ -92,7 +96,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         
         self.tapVideoLayer(tap)
         
-        
+        trimmerView.asset = asset
     }
 }
 
