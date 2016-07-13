@@ -31,13 +31,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let selectVideo = UIButton(frame: CGRect(x: 0, y: 50, width: view.width, height: 40))
+        let selectVideo = UIButton(frame: CGRect(x: 0, y: 50, width: view.gg_width, height: 40))
         selectVideo.setTitle("selet video", forState: .Normal)
         selectVideo.setTitleColor(UIColor.blackColor(), forState: .Normal)
         selectVideo.addTarget(self, action: #selector(ViewController.tapSelectVideo(_:)), forControlEvents: .TouchUpInside)
         view.addSubview(selectVideo)
         
-        videoPlayer = UIView(frame: CGRect(x: 0, y: selectVideo.bottom + 20, width: view.width, height: 300))
+        videoPlayer = UIView(frame: CGRect(x: 0, y: selectVideo.gg_bottom + 20, width: view.gg_width, height: 300))
         videoPlayer.backgroundColor = UIColor.blackColor()
         view.addSubview(videoPlayer)
         
@@ -46,7 +46,8 @@ class ViewController: UIViewController {
         
         tempVideoPath = NSTemporaryDirectory().stringByAppendingString("tempMov.mov")
         
-        trimmerView = YKVideoTrimmer(frame: CGRect(x: 0, y: UIScreen.mainScreen().bounds.height - 200, width: UIScreen.mainScreen().bounds.width, height: 100))
+        trimmerView = YKVideoTrimmer(frame: CGRect(x: 0, y: videoPlayer.gg_bottom + 20, width: UIScreen.mainScreen().bounds.width, height: 80))
+        trimmerView.delegate = self
         view.addSubview(trimmerView)
     }
 
@@ -61,16 +62,16 @@ class ViewController: UIViewController {
     
     func tapVideoLayer(sender: UITapGestureRecognizer) {
         if isPlaying {
-            player.pause()
+//            player.pause()
         } else {
-            player.play()
+//            player.play()
         }
         isPlaying = !isPlaying
     }
     
     override func viewDidLayoutSubviews() {
         if playerLayer != nil {
-            playerLayer.frame = CGRect(x: 0, y: 0, width: videoLayer.width, height: videoLayer.height)
+            playerLayer.frame = CGRect(x: 0, y: 0, width: videoLayer.gg_width, height: videoLayer.gg_height)
         }
     }
 }
@@ -100,3 +101,8 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     }
 }
 
+extension ViewController: YKVideoTrimmerDelegate {
+    func trimmerTime(view: UIView, didChangePoint: CMTime) {
+        self.player.seekToTime(didChangePoint, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+    }
+}

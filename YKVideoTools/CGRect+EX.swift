@@ -10,7 +10,7 @@ import UIKit
 
 
 extension UIView {
-    var x: CGFloat {
+    var gg_x: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -21,7 +21,7 @@ extension UIView {
         }
     }
     
-    var y: CGFloat {
+    var gg_y: CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -32,7 +32,7 @@ extension UIView {
         }
     }
     
-    var width: CGFloat {
+    var gg_width: CGFloat {
         get {
             return self.frame.size.width
         }
@@ -43,7 +43,7 @@ extension UIView {
         }
     }
     
-    var height: CGFloat {
+    var gg_height: CGFloat {
         get {
             return self.frame.size.height
         }
@@ -54,46 +54,46 @@ extension UIView {
         }
     }
     
-    var top: CGFloat {
+    var gg_top: CGFloat {
         get {
-            return y
+            return gg_y
         }
         set {
-            y = newValue
+            gg_y = newValue
         }
     }
     
-    var bottom: CGFloat {
+    var gg_bottom: CGFloat {
         get {
-            return y + height
+            return gg_y + gg_height
         }
     }
     
-    var left: CGFloat {
+    var gg_left: CGFloat {
         get {
-            return x
+            return gg_x
         }
     }
     
-    var right: CGFloat {
+    var gg_right: CGFloat {
         get {
-            return x + width
+            return gg_x + gg_width
         }
     }
     
-    var midX: CGFloat {
+    var gg_midX: CGFloat {
         get {
-            return self.x + self.width / 2
+            return self.gg_x + self.gg_width / 2
         }
     }
     
-    var midY: CGFloat {
+    var gg_midY: CGFloat {
         get {
-            return self.y + self.height / 2
+            return self.gg_y + self.gg_height / 2
         }
     }
     
-    var origin: CGPoint {
+    var gg_origin: CGPoint {
         get {
             return self.frame.origin
         }
@@ -104,7 +104,7 @@ extension UIView {
         }
     }
     
-    var size: CGSize {
+    var gg_size: CGSize {
         get {
             return self.frame.size
         }
