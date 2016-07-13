@@ -1,2 +1,0 @@
-/Users/song/Library/Developer/Xcode/DerivedData/YKVideoTools-heigwdofkyygtjfxfuntixuczikk/Build/Products/Debug-iphonesimulator/YKVideoTools.app
-
