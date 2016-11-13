@@ -32,35 +32,35 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let selectVideo = UIButton(frame: CGRect(x: 0, y: 50, width: view.gg_width, height: 40))
-        selectVideo.setTitle("selet video", forState: .Normal)
-        selectVideo.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        selectVideo.addTarget(self, action: #selector(ViewController.tapSelectVideo(_:)), forControlEvents: .TouchUpInside)
+        selectVideo.setTitle("selet video", for: UIControlState())
+        selectVideo.setTitleColor(UIColor.black, for: UIControlState())
+        selectVideo.addTarget(self, action: #selector(ViewController.tapSelectVideo(_:)), for: .touchUpInside)
         view.addSubview(selectVideo)
         
         videoPlayer = UIView(frame: CGRect(x: 0, y: selectVideo.gg_bottom + 20, width: view.gg_width, height: 300))
-        videoPlayer.backgroundColor = UIColor.blackColor()
+        videoPlayer.backgroundColor = UIColor.black
         view.addSubview(videoPlayer)
         
         videoLayer = UIView(frame: videoPlayer.bounds)
         videoPlayer.addSubview(videoLayer)
         
-        tempVideoPath = NSTemporaryDirectory().stringByAppendingString("tempMov.mov")
+        tempVideoPath = NSTemporaryDirectory() + "tempMov.mov"
         
-        trimmerView = YKVideoTrimmer(frame: CGRect(x: 0, y: videoPlayer.gg_bottom + 20, width: UIScreen.mainScreen().bounds.width, height: 80))
+        trimmerView = YKVideoTrimmer(frame: CGRect(x: 0, y: videoPlayer.gg_bottom + 20, width: UIScreen.main.bounds.width, height: 80))
         trimmerView.delegate = self
         view.addSubview(trimmerView)
     }
 
-    func tapSelectVideo(sender: UIButton) {
+    func tapSelectVideo(_ sender: UIButton) {
         let vc = UIImagePickerController()
-        vc.sourceType = .PhotoLibrary
+        vc.sourceType = .photoLibrary
         vc.mediaTypes = [kUTTypeMovie as String]
         vc.delegate = self
-        vc.editing = false
-        presentViewController(vc, animated: true, completion: nil)
+        vc.isEditing = false
+        present(vc, animated: true, completion: nil)
     }
     
-    func tapVideoLayer(sender: UITapGestureRecognizer) {
+    func tapVideoLayer(_ sender: UITapGestureRecognizer) {
         if isPlaying {
 //            player.pause()
         } else {
@@ -77,17 +77,17 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        picker.dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
         
-        guard let url = info[UIImagePickerControllerMediaURL] as? NSURL else { return }
+        guard let url = info[UIImagePickerControllerMediaURL] as? URL else { return }
         
-        asset = AVAsset(URL: url)
+        asset = AVAsset(url: url)
         let item = AVPlayerItem(asset: asset)
         player = AVPlayer(playerItem: item)
         playerLayer = AVPlayerLayer(player: player)
         playerLayer.contentsGravity = AVLayerVideoGravityResizeAspect
-        player.actionAtItemEnd = .None
+        player.actionAtItemEnd = .none
         videoLayer.layer.addSublayer(playerLayer)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.tapVideoLayer(_:)))
@@ -102,7 +102,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 }
 
 extension ViewController: YKVideoTrimmerDelegate {
-    func trimmerTime(view: UIView, didChangePoint: CMTime) {
-        self.player.seekToTime(didChangePoint, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
+    func trimmerTime(_ view: UIView, didChangePoint: CMTime) {
+        self.player.seek(to: didChangePoint, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
     }
 }
